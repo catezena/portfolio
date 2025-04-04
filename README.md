@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css"> <!-- Corrected missing closing bracket -->
 </head>
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
-        <p>I'm Catherine Zena , a passionate Computer scientist</p>
+        <p>I'm Catherine Zena, a passionate Computer Scientist</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -23,44 +23,37 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello, I'm Catherine, a dedicated programmer with a passion for secure coding and innovative problem-solving. What drives me is the thrill of creating solutions that not only work seamlessly but also protect users and their data. With a strong foundation in languages like Java, C++, and Python, I enjoy exploring new challenges and mastering modern technologies. My enthusiasm for the ever-evolving tech world is fueled by a commitment to excellence and a desire to make a positive impact through technology.Let's coonect and see how my skills can contribute to your next project .</p>
+        <p>Hello, I'm Catherine, a dedicated programmer with a passion for secure coding and innovative problem-solving. What drives me is the thrill of creating solutions that not only work seamlessly but also protect users and their data. With a strong foundation in languages like Java, C++, and Python, I enjoy exploring new challenges and mastering modern technologies. My enthusiasm for the ever-evolving tech world is fueled by a commitment to excellence and a desire to make a positive impact through technology. Let's connect and see how my skills can contribute to your next project.</p>
     </section>
 
     <section id="education">
         <h2>Educational Background</h2>
-        <p>I'm currently a second-year Bachelor of Computer Science student, specializing in software engineering, network analysis, and cybersecurity. My academic journey so far has equipped me with a solid foundation in programming languages like Java, C++, C, alongside hands-on experience in secure coding practices and real-world applications. I'm excited to continue growing my skills and exploring innovative technologies. Feel free to check out my CV to learn more about my academic projects and achievements</p>
+        <p>I'm currently a second-year Bachelor of Computer Science student, specializing in software engineering, network analysis, and cybersecurity. My academic journey so far has equipped me with a solid foundation in programming languages like Java, C++, and C, alongside hands-on experience in secure coding practices and real-world applications. I'm excited to continue growing my skills and exploring innovative technologies. Feel free to check out my CV to learn more about my academic projects and achievements.</p>
         <a href="https://1drv.ms/b/c/8b86b33601f7e68e/EWNkPfJGhv9Ek9jUEsySsbkBeiagK_2aijzRmmIVaNK1dA" download>Download CV</a>
     </section>
 
     <section id="interests">
         <h2>Interests</h2>
-        <I've always been fascinated by the way technology transforms everyday life, and that curiosity drives my passion for coding and innovation. I enjoy diving into secure coding practices and understanding how to build applications that not only perform well but are also resilient against modern threats. I’m also interested in web-development there’s something exciting about creating functional, user-friendly designs from scratch. What excites me the most is the constant learning in tech how you can never have enough of it ....keeps me on my toes and challenges me to grow every day.</p>
+        <p>I've always been fascinated by the way technology transforms everyday life, and that curiosity drives my passion for coding and innovation. I enjoy diving into secure coding practices and understanding how to build applications that not only perform well but are also resilient against modern threats. I’m also interested in web development; there’s something exciting about creating functional, user-friendly designs from scratch. What excites me the most is the constant learning in tech; how you can never have enough of it keeps me on my toes and challenges me to grow every day.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <ul>
             <li>
-                <a href="https://github.com/catezena/SECURE-LOGIN-SYSTEM.git">SECURE-LOGIN-SYSTEM</a>:Description: I developed a secure authentication system with robust protection against SQL injection and Cross-Site Request Forgery (CSRF) attacks. The system utilized hashing algorithms for password storage and implemented session management to ensure user safety during login processes.
-
-                Key Skills Used: Database management, encryption, and vulnerability testing.
-                
-                Technologies: Java, MySQL, and bcrypt for password hashing.
-                
-                My Role: Designed the database schema,
-                
-                implemented login functionality, and tested the system for common security vulnerabilities.
+                <a href="https://github.com/catezena/SECURE-LOGIN-SYSTEM.git">SECURE-LOGIN-SYSTEM</a>: 
+                <p>Description: I developed a secure authentication system with robust protection against SQL injection and Cross-Site Request Forgery (CSRF) attacks. The system utilized hashing algorithms for password storage and implemented session management to ensure user safety during login processes.</p>
+                <p>Key Skills Used: Database management, encryption, and vulnerability testing.</p>
+                <p>Technologies: Java, MySQL, and bcrypt for password hashing.</p>
+                <p>My Role: Designed the database schema, implemented login functionality, and tested the system for common security vulnerabilities.</p>
             </li>
             <li>
-                <hrefaf="https://1drv.ms/b/c/8b86b33601f7e68e/ERhQsxG-OstHs35cdOmIHnwBrRu1vwSWtBmvBQb-x2J3KQ">HTTP HEADER ANALYSIS TOOL</a>:Description: This project involved creating a tool to analyze HTTP headers for security and performance optimization. By leveraging network analysis tools like Wireshark, I was able to identify vulnerabilities in data transmission and enhance application security. The project required a strong understanding of network protocols and an ability to interpret complex data flow patterns.
-
-                Key Skills Used: Network analysis, Python scripting, and secure coding practices.
-                
-                Technologies: Python, Wireshark, and HTTP protocols.
-                
-                My Role: Designed and developed the tool, tested various use cases, and documented the findings with actionable security recommendations.
+                <a href="https://1drv.ms/b/c/8b86b33601f7e68e/ERhQsxG-OstHs35cdOmIHnwBrRu1vwSWtBmvBQb-x2J3KQ">HTTP HEADER ANALYSIS TOOL</a>: 
+                <p>Description: This project involved creating a tool to analyze HTTP headers for security and performance optimization. By leveraging network analysis tools like Wireshark, I was able to identify vulnerabilities in data transmission and enhance application security. The project required a strong understanding of network protocols and an ability to interpret complex data flow patterns.</p>
+                <p>Key Skills Used: Network analysis, Python scripting, and secure coding practices.</p>
+                <p>Technologies: Python, Wireshark, and HTTP protocols.</p>
+                <p>My Role: Designed and developed the tool, tested various use cases, and documented the findings with actionable security recommendations.</p>
             </li>
-            
         </ul>
     </section>
 
@@ -81,11 +74,15 @@
     </section>
 
     <footer>
-        <p>&copy; [Year] [Your Name]. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Catherine Zena. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Automatically set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
-
 
 /* GENERAL STYLES */
 * {
@@ -671,4 +668,3 @@ section:hover::before {
   height: 70px;
   opacity: 0.8;
 }
-
